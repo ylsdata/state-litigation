@@ -25,7 +25,7 @@ We need to obtain state-level data for each of the 50 states from 2000- using th
 
 Option 1: API
 
-- Grab all highlighted fields from the AGG_DESC tab of ['Public Sector -Annual - CoG API Documentation.xlsx'](Public Sector -Annual - CoG API Documentation.xlsx) using the [Public Sector Statistics API](https://www.census.gov/data/developers/data-sets/annual-public-sector-stats.html) for all states and years 2000-
+- Grab all highlighted fields from the AGG_DESC tab of ['Public Sector -Annual - CoG API Documentation.xlsx'](https://yaleedu.sharepoint.com/:x:/r/sites/YLSData/Shared%20Documents/Efforts/state-lawsuits/Public%20Sector%20-Annual%20-%20CoG%20API%20Documentation.xlsx?d=w13ed7e948ec74b64bbe5c859e6355694&csf=1&web=1&e=EHfcJp) using the [Public Sector Statistics API](https://www.census.gov/data/developers/data-sets/annual-public-sector-stats.html) for all states and years 2000-
 
 - Employment data should come from SVY-CMP 01, Expenditure data should come from SVY-CMP 04
 - For GOV_TYPE, try 001 (State and Local) or 002 (State)
@@ -42,5 +42,5 @@ Option 2: Download manually (not sure if we need this just yet....)
   - G29 - Central Staff-Other Capital Outlay
 
 
-# Guides
+## Guides
 - [`censusapi`](https://www.hrecht.com/censusapi/articles/getting-started.html)
