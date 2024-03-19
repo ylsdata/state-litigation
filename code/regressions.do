@@ -86,7 +86,7 @@ local grid_cngr = (`max_cngr'-`min_cngr')/$mfx_grid_size
 foreach y in $depvars {
 	foreach m in $models {
 		`m' `y' c.nominate_p50_cngr##i.dem_pres c.nominate_p50_cngr##c.circ_rep_share ///
-			$indvars1 $indvars3 $indvars4 $controls i.year || state_code:, vce(robust)			
+			$indvars1 $indvars3 $indvars4 $controls i.year || state_code:, irr vce(robust)			
 	
 	
 		// Presidential party and congressional NOMINATE interaction
@@ -121,7 +121,7 @@ foreach y in $depvars {
 		qui margins, noestimcheck ///
 			at(circ_rep_share = (10 50 90) ///
 			nominate_p50_cngr = (`min_cngr' (`grid_cngr') `max_cngr')) 
-		marginsplot, x(nominate_p50_cngr) recast(line)  ///
+		marginsplot, x(nominate_p50_cngr) recast(line) noci ///
 			title("Predictive Margins of Circuit Court Partisanship") ///
 			xtitle("Congressional NOMINATE Score") ///
 			ytitle("Predicted Mean Litigation") ///
