@@ -1,8 +1,24 @@
+# OS-extensions and tempfiles
+.DS_Store
+~*
+
+# R-extensions and idiosyncracies
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 .Renviron
-data/
+README.html
 
-.DS_Store
+# Stata-extensions
+*.stswp
+
+# Directories and Files
+data/munged
+data
+docs
+results/*.txt
+results/*.xml
+results/*.rtf
+scratch
+
