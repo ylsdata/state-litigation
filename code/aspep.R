@@ -1,8 +1,8 @@
 library(tidyverse)
 library(tidycensus)
 
-source("macros.R")
-source("functions.R")
+source("code/macros.R")
+source("code/functions.R")
 
 
 # Download

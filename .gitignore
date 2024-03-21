@@ -15,10 +15,8 @@ README.html
 
 # Directories and Files
 data/munged
-data
 docs
 results/*.txt
 results/*.xml
 results/*.rtf
 scratch
-

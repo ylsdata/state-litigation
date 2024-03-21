@@ -2,8 +2,8 @@ library(tidyverse)
 library(tidycensus)
 library(readxl)
 
-source("macros.R")
-source("functions.R")
+source("code/macros.R")
+source("code/functions.R")
 
 
 # Load

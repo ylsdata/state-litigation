@@ -1,7 +1,7 @@
 library(tidyverse)
 
-source("macros.R")
-source("functions.R")
+source("code/macros.R")
+source("code/functions.R")
 
 
 # Download data files
